@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    color: #f5f5f5;
+    background: #05070d;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #root {
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    background: #05070d;
+  }
+}
+
+.click-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  color: #d9fbfc;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  font-size: clamp(1.25rem, 3vw, 2.5rem);
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-shadow:
+    3px 0 #12313b,
+    0 3px #12313b,
+    0 0 1.5rem rgb(112 218 229 / 0.7);
+  transform: translate(-50%, -50%);
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.click-link:hover {
+  color: #ffffff;
+  transform: translate(-50%, -50%) scale(1.08);
+}
