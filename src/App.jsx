@@ -1,4 +1,5 @@
 import Topography from './components/Topography'
+import DodgeField from './components/DodgeField'
 
 function App() {
   return (
@@ -20,9 +21,18 @@ function App() {
         hoverEffect="lift"
         clickEffect="pulse"
       />
-      <a className="click-link" href="https://suraset-khurasee.github.io/rnd01/">
-        CLICK
-      </a>
+      <div className="dare-field">
+        <DodgeField
+          inkColor="#d9fbfc"
+          contrastColor="#12313b"
+          fieldHeight={180}
+          reach={84}
+          radius={140}
+          patience={4}
+          caughtHoldMs={10000}
+          href="https://suraset-khurasee.github.io/rnd01/"
+        />
+      </div>
     </main>
   )
 }
